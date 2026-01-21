@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chi tiết sản phẩm - SHOE-DEV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo" onclick="location.href = 'index.html'">
+        <img src="../logo.png" alt="Logo"> SHOE-DEV
+      </div>
+      <nav class="main-menu">
+        <a href="index.html">Tất cả</a>
+        <a href="index.html">Nike</a>
+        <a href="index.html">Adidas</a>
+        <a href="index.html">Jordan</a>
+        <a href="index.html">Puma</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="openConsult">Tư vấn</button>
+        <a href="cart.html">🛒</a>
+        <a href="login.html" id="loginLink">Đăng nhập/Đăng ký</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="content" id="productDetailContainer"></section>
+    </main>
+
+    <div id="consultModal" class="modal">
+      <div class="modal-box">
+        <span id="closeConsult">✖</span>
+        <h3>Liên hệ tư vấn</h3>
+        <form id="consultFormInner">
+            <input type="text" id="consultName" placeholder="Họ tên" required />
+            <input type="email" id="consultEmail" placeholder="Email" required />
+            <textarea id="consultContent" placeholder="Nội dung tư vấn" required></textarea>
+            <button type="submit">Gửi yêu cầu</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo"><img src="../logo.png"> SHOE-DEV</h3>
+          <p class="footer-desc">Chuyên cung cấp các dòng giày sneaker chính hãng.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Liên hệ</h3>
+           <p style="display: flex;align-items: center;font-family: Arial, sans-serif;">
+            <span style="margin-right: 4px;">📍</span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Số+79+đường+DT743+phường+Bình+Hòa+Thuận+An+Bình+Dương"
+              target="_blank"
+              style="color: #ffffff; text-decoration: none; line-height: 1.5"
+              onmouseover="this.style.textDecoration = 'underline'"
+              onmouseout="this.style.textDecoration = 'none'">
+                Số 79, đường DT743, phường Bình Hòa,<br />Ho Chi Minh City,
+                Vietnam
+            </a>
+          </p>
+          <p>📞 Hotline: 098 626 56 79</p>
+          <span>✉️</span>
+          <a href="https://www.facebook.com/bdi.edu.vn/?locale=vi_VN" target="_blank"
+   style="color: #ffffff; text-decoration: none; font-family: sans-serif;" 
+   onmouseover="this.style.textDecoration='underline'" 
+   onmouseout="this.style.textDecoration='none'">
+   Email:truongtccnbd@gmail.com
+</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 SHOE-DEV. All rights reserved. <br>
+        <strong>Sinh viên thực hiện: Vũ Thái Huy (24N01214) & Đỗ Lâm Trường (24N01211)</strong>
+      </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/consult.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", renderDetailPage);</script>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Đăng nhập - SHOE-DEV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="header-container">
+      <div class="logo" onclick="location.href = 'index.html'">
+        <img src="../logo.png" alt="Logo"> SHOE-DEV
+      </div>
+      <nav class="main-menu">
+        <a href="index.html">Tất cả</a>
+        <a href="index.html">Nike</a>
+        <a href="index.html">Adidas</a>
+        <a href="index.html">Jordan</a>
+        <a href="index.html">Puma</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="openConsult">Tư vấn</button>
+        <a href="cart.html">🛒</a>
+        <a href="login.html" id="loginLink" class="active">Đăng nhập/Đăng ký</a>
+      </div>
+    </header>
+
+    <main class="login-page">
+      <div class="login-container">
+        <div id="loginFormBlock" class="form-box">
+          <h2>Đăng Nhập</h2>
+          <form id="loginForm">
+            <div class="input-group">
+              <input type="text" id="loginUser" required placeholder="Tên đăng nhập">
+            </div>
+            <div class="input-group">
+              <input type="password" id="loginPass" required placeholder="Mật khẩu">
+            </div>
+            <button type="submit" class="auth-btn">Đăng Nhập</button>
+            <p>Chưa có tài khoản? <a href="#" id="btnShowRegister">Đăng ký ngay</a></p>
+          </form>
+        </div>
+
+        <div id="registerFormBlock" class="form-box" style="display: none;">
+          <h2>Đăng Ký Tài Khoản</h2>
+          <form id="registerForm">
+            <div class="input-group">
+              <input type="text" id="regUser" required placeholder="Tên tài khoản mới">
+            </div>
+            <div class="input-group">
+              <input type="email" id="regEmail" required placeholder="Email">
+            </div>
+            <div class="input-group">
+              <input type="password" id="regPass" required placeholder="Mật khẩu">
+            </div>
+            <button type="submit" class="auth-btn" style="background: #38bdf8;">Tạo Tài Khoản</button>
+            <p>Đã có tài khoản? <a href="#" id="btnShowLogin">Quay lại đăng nhập</a></p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <div id="consultModal" class="modal">
+      <div class="modal-box">
+        <span id="closeConsult">✖</span>
+        <h3>Liên hệ tư vấn</h3>
+        <form id="consultFormInner">
+            <input type="text" id="consultName" placeholder="Họ tên" required />
+            <input type="email" id="consultEmail" placeholder="Email" required />
+            <textarea id="consultContent" placeholder="Nội dung tư vấn" required></textarea>
+            <button type="submit">Gửi yêu cầu</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3 class="logo"><img src="../logo.png"> SHOE-DEV</h3>
+          <p class="footer-desc">Chuyên cung cấp các dòng giày sneaker chính hãng.</p>
+          <div class="social-links">
+            <a href="#">FB</a> <a href="#">IG</a> <a href="#">YT</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Hỗ trợ khách hàng</h3>
+          <ul>
+            <li><a href="#">Hướng dẫn chọn size</a></li>
+            <li><a href="#">Chính sách đổi trả</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Liên hệ</h3>
+          <p style="display: flex;align-items: center;font-family: Arial, sans-serif;">
+            <span style="margin-right: 4px;">📍</span>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Số+79+đường+DT743+phường+Bình+Hòa+Thuận+An+Bình+Dương"
+              target="_blank"
+              style="color: #ffffff; text-decoration: none; line-height: 1.5"
+              onmouseover="this.style.textDecoration = 'underline'"
+              onmouseout="this.style.textDecoration = 'none'">
+                Số 79, đường DT743, phường Bình Hòa,<br />Ho Chi Minh City,
+                Vietnam
+            </a>
+          </p>
+          <p>📞 Hotline: 098 626 56 79</p>
+          <span>✉️</span>
+          <a href="https://www.facebook.com/bdi.edu.vn/?locale=vi_VN" target="_blank"
+   style="color: #ffffff; text-decoration: none; font-family: sans-serif;" 
+   onmouseover="this.style.textDecoration='underline'" 
+   onmouseout="this.style.textDecoration='none'">
+   Email:truongtccnbd@gmail.com
+</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © 2026 SHOE-DEV. All rights reserved. <br>
+        <strong>Sinh viên thực hiện: Vũ Thái Huy (24N01214) & Đỗ Lâm Trường (24N01211)</strong>
+      </div>
+    </footer>
+
+    <script src="../js/login.js"></script>
+    <script src="../js/consult.js"></script>
+  </body>
+</html>
